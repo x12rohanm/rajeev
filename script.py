@@ -34,7 +34,7 @@ driver = webdriver.Remote(
     desired_capabilities=desired_cap)
 
 
-driver.get("http://www.ebesucher.com/surfbar/rock6064	")
+driver.get("http://www.ebesucher.com/surfbar/rock6064")
 time.sleep(10)
 driver.find_element_by_id("surf_now_button").click()
 print("Started...")
