@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
-
+import random
 
 
 # Set headers
@@ -18,11 +18,14 @@ soup = BeautifulSoup(req.content, 'html.parser')
 rohan = soup.find(id="LC1").text
 print(rohan)
 
+versions = ['79.0', '78.0', '77.0', '76.0', '75.0', '74.0', '73.0', '72.0', '71.0', '70.0', '69.0', '68.0', '67.0', '66.0', '65.0', '64.0', '63.0', '62.0', '61.0', '60.0', '59.0', '58.0', '57.0', '56.0', '55.0', '54.0', '53.0', '52.0', '51.0', '50.0', '49.0', '48.0', '47.0']
+selected_version = random.choice(versions)
+print(f'Selected Browser Version:- {selected_version}')
 
 
 desired_cap = {
  'browser': 'Chrome',
- 'browser_version': '80.0',
+ 'browser_version': selected_version,
  'os': 'OS X',
  'os_version': 'Catalina',
  'resolution': '1600x1200',
