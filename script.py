@@ -22,13 +22,18 @@ versions = ['79.0', '78.0', '77.0', '76.0', '75.0', '74.0', '73.0', '72.0', '71.
 selected_version = random.choice(versions)
 print(f'Selected Browser Version:- {selected_version}')
 
+os_versions = ['Catalina', 'Mojave', 'High Sierra', 'Sierra']
+seleceted_os_version = random.choice(os_versions)
+print(f'Selected Os Version:- {seleceted_os_version}')
+
+
 
 desired_cap = {
  'browser': 'Chrome',
  'browser_version': selected_version,
  'os': 'OS X',
- 'os_version': 'Catalina',
- 'resolution': '1600x1200',
+ 'os_version': seleceted_os_version,
+ 'resolution': '1920x1080',
  'name': 'Bstack-[Python] Sample Test'
 }
 
