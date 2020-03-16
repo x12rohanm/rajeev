@@ -43,7 +43,7 @@ driver = webdriver.Remote(
 
 
 driver.get("http://www.ebesucher.com/surfbar/rock6064")
-time.sleep(10)
+time.sleep(20)
 driver.find_element_by_id("surf_now_button").click()
 print("Started...")
 driver.switch_to.window(driver.window_handles[1])
